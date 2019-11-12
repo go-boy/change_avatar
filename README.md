@@ -1,6 +1,6 @@
 # change_avatar
 
-[![Build Status](https://api.travis-ci.org/go-boy/change_avatar.svg?branch=master)](https://api.travis-ci.org/go-boy/change_avatar)
+[![Build Status](https://travis-ci.com/go-boy/change_avatar.svg?branch=master)](https://travis-ci.com/go-boy/change_avatar)
 
 Change Avatar
 
