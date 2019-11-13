@@ -5,12 +5,15 @@ import (
 	echo "github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
 	"github.com/go-boy/change_avatar/handlers"
+	"github.com/swaggo/echo-swagger"
+	_ "github.com/go-boy/change_avatar/docs"
 )
 
 
 // setupRouter 初始化路由
 func setupRouter(e *echo.Echo) {
 	// Ping test
+	e.GET("/swagger/*", echoSwagger.WrapHandler)
 	e.GET("/ping", func(c echo.Context) error {
 		return c.String(http.StatusOK, "ok")
 	})
